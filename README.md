@@ -48,3 +48,6 @@ No framework detected. Default Project Settings:
 Click the Inspect link to view the built site, or follow instruction to deploy to production.
 
 Note: If you fumble the vercel setup by removing the .vercel folder, then do the following to also delete the deployment on vercel servers.  It's under Advanced settings for each project.
+
+## Reference material
+* https://www.sanity.io/guides/using-typescript-with-svelte
