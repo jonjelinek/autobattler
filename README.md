@@ -10,7 +10,7 @@ Technologies used: svelte, typescript, vercel
     npm run dev
 
 ## initial repo setup
-
+    TODO: How to set this npm version as default???
     nvm use stable
     npx degit sveltejs/template autobattler
     cd autobattler
@@ -21,7 +21,7 @@ Technologies used: svelte, typescript, vercel
 ## To deploy
 
     cd public
-    vercel
+    vercel deploy
 
 Fill out questions:
 

@@ -1,9 +1,10 @@
 <script lang="ts">
-  export let name: string, power: number, health: number;
+  export let name: string, power: number, health: number, level: number;
 </script>
 
 <div class="mob">
   <h2 class="name">{name}</h2>
+  <h3 class="level">Level: {level}</h3>
   Attack Power
   <div class="power" style="--power-value: {power * 10}px">{power}</div>
   Health Points
@@ -25,6 +26,11 @@
   }
 
   .name {
+    font-weight: bold;
+    padding-bottom: 1em;
+  }
+
+  .level {
     font-weight: bold;
     padding-bottom: 1em;
   }
