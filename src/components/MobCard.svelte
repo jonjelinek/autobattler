@@ -1,5 +1,6 @@
 <script lang="ts">
   export let name: string, power: number, health: number, level: number;
+  import Heart from "./heart.svg";
 </script>
 
 <div class="mob">
@@ -7,8 +8,12 @@
   <h3 class="level">Level: {level}</h3>
   Attack Power
   <div class="power" style="--power-value: {power * 10}px">{power}</div>
-  Health Points
-  <div class="health" style="--health-value: {health}px">{health}</div>
+  <!-- <div class="health" style="--health-value: {health}px">{health}</div> -->
+  <div class="heart-container">
+    <!-- https://github.com/codefeathers/rollup-plugin-svelte-svg -->
+    <Heart text="test" />
+    <div class="health-points">{health}</div>
+  </div>
 </div>
 
 <style>
@@ -45,5 +50,12 @@
     background-color: crimson;
     width: var(--health-value);
     color: white;
+  }
+
+  .heart-container {
+    position: inline;
+  }
+  .health-points {
+    position: inline-block;
   }
 </style>
